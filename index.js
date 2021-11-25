@@ -25,8 +25,8 @@ function closeNav() {
 //to connect with gmail api
 
 // Client ID and API key from the Developer Console
-var CLIENT_ID = '588640508617-259ue87lvclnnmbga01ffhmaebg3shs0.apps.googleusercontent.com';
-var API_KEY = 'AIzaSyDyx9H-KRgtmIyFuYd9RBPLE9ZcQNyf8wM';
+var CLIENT_ID = '588640508617-4ui879fvt9n3hd828auqe5232rae5m1i.apps.googleusercontent.com';
+var API_KEY = 'AIzaSyBzv1-sU_cE3U7bLWMDDUJDv-TpgQZTfFA';
 
 // Array of API discovery doc URLs for APIs used by the quickstart
 var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest"];

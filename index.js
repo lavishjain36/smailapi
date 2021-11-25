@@ -227,7 +227,7 @@ function loadClient() {
 // Make sure the client is loaded and sign-in is complete before calling this method.
 function executeGetInbox() {
     return gapi.client.gmail.users.messages.list({
-      "userId": "gmclone39@gmail.com"
+      "userId": "jainmonula1@gmail.com"
     })
         .then(function(response) {
                 // Handle the results here (response.result has the parsed body).
@@ -249,7 +249,7 @@ var InboxMsgBodyList = []
 
 function executeGetMessage(id) {
     return gapi.client.gmail.users.messages.get({
-      "userId": "gmclone39@gmail.com",
+      "userId": "jainmonula1@gmail.com",
       "id": id
     })
         .then(function(response) {
@@ -348,7 +348,7 @@ var sentMsgBodyList = []
 
 function executeGetSent() {
     return gapi.client.gmail.users.messages.list({
-      "userId": "gmclone39@gmail.com"
+      "userId": "jainmonula1@gmail.com"
     })
         .then(function(response) {
                 // Handle the results here (response.result has the parsed body).
@@ -365,7 +365,7 @@ function executeGetSent() {
 
 function executeGetSentMessage(id) {
     return gapi.client.gmail.users.messages.get({
-      "userId": "gmclone39@gmail.com",
+      "userId": "jainmonula1@gmail.com",
       "id": id
     })
         .then(function(response) {
@@ -502,7 +502,7 @@ function sendMessage(mailHeaders, msg){
 
     return gapi.client.gmail.users.messages.send(
         {
-            "userId": "gmclone39@gmail.com",
+            "userId": "jainmonula1@gmail.com",
             "resource": {
                 'raw' : window.btoa(email).replace(/\+/g,'-').replace(/\//g,'_')
             }
@@ -556,7 +556,7 @@ function sendMessage(mailHeaders, msg){
     return gapi.client.gmail.users.drafts.send(
         {
             'id': dId,
-            "userId": "gmclone39@gmail.com",
+            "userId": "jainmonula1@gmail.com",
     })
       .then(function(response){
         var statusElem = document.querySelector(".mail-sent-status")
@@ -623,7 +623,7 @@ function saveMessage(draftHeaders, msg){
 
     return gapi.client.gmail.users.drafts.create(
         {
-            "userId": "gmclone39@gmail.com",
+            "userId": "jainmonula1@gmail.com",
             "resource": {
                 "message": {
                     'raw' : window.btoa(email).replace(/\+/g,'-').replace(/\//g,'_')
@@ -677,7 +677,7 @@ var draftMsgBodyList = []
 
 function executeGetDraft(){
     return gapi.client.gmail.users.drafts.list({
-        "userId": "gmclone39@gmail.com"
+        "userId": "jainmonula1@gmail.com"
       })
           .then(function(response) {
                   // Handle the results here (response.result has the parsed body).
@@ -697,7 +697,7 @@ function executeGetDraft(){
 var dfId = " "
 function executeGetDraftMessage(id,dId) {
     return gapi.client.gmail.users.messages.get({
-      "userId": "gmclone39@gmail.com",
+      "userId": "jainmonula1@gmail.com",
       "id": id
     })
         .then(function(response) {
